@@ -7,10 +7,9 @@ use Spatie\LaravelPackageTools\PackageServiceProvider;
 
 class LaravelFileParserServiceProvider extends PackageServiceProvider
 {
-
     public function packageRegistered()
     {
-        $this->app->singleton(FileParserManager::class, function() {
+        $this->app->singleton(FileParserManager::class, function () {
 
             $manager = new FileParserManager();
 
@@ -24,7 +23,6 @@ class LaravelFileParserServiceProvider extends PackageServiceProvider
             return $manager;
         });
     }
-
 
     public function configurePackage(Package $package): void
     {
