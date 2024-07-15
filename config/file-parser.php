@@ -1,6 +1,8 @@
 <?php
 
-// config for Christopheredjohnson/LaravelFileParser
 return [
-
+    'parsers' => [
+        "json" => \Christopheredjohnson\LaravelFileParser\Parsers\JsonParser::class,
+        "csv" => \Christopheredjohnson\LaravelFileParser\Parsers\CsvParser::class
+    ]
 ];
