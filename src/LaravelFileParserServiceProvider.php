@@ -17,9 +17,6 @@ class LaravelFileParserServiceProvider extends PackageServiceProvider
          */
         $package
             ->name('laravel-file-parser')
-            ->hasConfigFile()
-            ->hasViews()
-            ->hasMigration('create_laravel-file-parser_table')
-            ->hasCommand(LaravelFileParserCommand::class);
+            ->hasConfigFile();
     }
 }
