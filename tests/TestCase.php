@@ -2,9 +2,9 @@
 
 namespace Christopheredjohnson\LaravelFileParser\Tests;
 
+use Christopheredjohnson\LaravelFileParser\LaravelFileParserServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Christopheredjohnson\LaravelFileParser\LaravelFileParserServiceProvider;
 
 class TestCase extends Orchestra
 {

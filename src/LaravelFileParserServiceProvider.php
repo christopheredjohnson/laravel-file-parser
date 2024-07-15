@@ -2,9 +2,9 @@
 
 namespace Christopheredjohnson\LaravelFileParser;
 
+use Christopheredjohnson\LaravelFileParser\Commands\LaravelFileParserCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Christopheredjohnson\LaravelFileParser\Commands\LaravelFileParserCommand;
 
 class LaravelFileParserServiceProvider extends PackageServiceProvider
 {
