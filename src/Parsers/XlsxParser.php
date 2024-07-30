@@ -11,7 +11,7 @@ class XlsxParser implements ParserInterface
     {
         $reader = \PhpOffice\PhpSpreadsheet\IOFactory::createReader('Xlsx');
 
-        $reader->setReadDataOnly(TRUE);
+        $reader->setReadDataOnly(true);
         $reader->setReadEmptyCells(false);
 
         $spreadsheet = $reader->load($filePath);
@@ -22,7 +22,7 @@ class XlsxParser implements ParserInterface
             :
             $spreadsheet->getActiveSheet();
 
-        $data = $worksheet->toArray("");
+        $data = $worksheet->toArray('');
 
         $headers = array_shift($data);
         $nameArray = [];

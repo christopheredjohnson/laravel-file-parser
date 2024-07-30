@@ -11,7 +11,7 @@ class LaravelFileParserServiceProvider extends PackageServiceProvider
     {
         $this->app->singleton(FileParserManager::class, function () {
 
-            $manager = new FileParserManager();
+            $manager = new FileParserManager;
 
             $parsers = collect(config('file-parser.parsers', []));
 
