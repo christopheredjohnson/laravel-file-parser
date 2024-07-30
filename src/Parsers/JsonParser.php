@@ -4,7 +4,7 @@ namespace Christopheredjohnson\LaravelFileParser\Parsers;
 
 class JsonParser implements ParserInterface
 {
-    public static function parse($filePath)
+    public static function parse($filePath, $config = [])
     {
         $content = file_get_contents($filePath);
 

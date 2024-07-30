@@ -6,7 +6,7 @@ use League\Csv\Reader;
 
 class CsvParser implements ParserInterface
 {
-    public static function parse($filePath)
+    public static function parse($filePath, $config = [])
     {
         $csv = Reader::createFromPath($filePath, 'r');
         $csv->setHeaderOffset(0);

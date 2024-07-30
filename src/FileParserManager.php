@@ -13,7 +13,7 @@ class FileParserManager
         $this->parsers[strtolower($type)] = $parser;
     }
 
-    public function parse($source, $type)
+    public function parse($source, $type, $config = [])
     {
         $type = strtolower($type);
 
@@ -21,7 +21,7 @@ class FileParserManager
             throw new \Exception("Unsupported source type: $type");
         }
 
-        return $this->parsers[$type]::parse($source);
+        return $this->parsers[$type]::parse($source, $config);
     }
 
     public function getRegisteredParsers()
